@@ -18,7 +18,13 @@ Las redes son un componente fundamental que permite la comunicación entre conte
 docker network create <nombre red> -d bridge
 ```
 
+```
+docker network create primer-red -d bridge
+```
+
 ### Crear un contenedor vinculado a una red
+
+<img width="596" height="42" alt="image" src="https://github.com/user-attachments/assets/8b1550c7-832a-4562-8de8-763505d66a9d" />
 
 ```
 docker run -d --name <nombre contenedor> --network <nombre red> <nombre imagen>
@@ -56,7 +62,7 @@ docker network ls
 
 ### Crear los contenedores y las redes que se presentan en el esquema. Usar para todos los contenedores la imagen de nginx:alpine
 
-!\[Imagen](esquema-ejercicio-redes.PNG)
+![Imagen](esquema-ejercicio-redes.PNG)
 
 # COLOCAR UNA CAPTURA DE LAS REDES EXISTENTES CREADAS
 
@@ -67,4 +73,10 @@ docker network ls
 ```
 docker network rm <nombre de la red>
 ```
+
+```
+docker network rm primer-red
+```
+
+<img width="1530" height="205" alt="image" src="https://github.com/user-attachments/assets/9e636055-8389-432a-a9ee-160881933bc0" />
 
