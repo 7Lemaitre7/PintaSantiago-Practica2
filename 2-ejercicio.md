@@ -24,6 +24,12 @@ La figura presenta el esquema creado en donde los puertos son:
 # COMPLETAR CON UNA CAPTURA DEL LOGIN
 ### Crear la base de datos info, y dentro de esa base la tabla personas, con id (serial) y nombre (varchar), agregar un par de registros en la tabla, obligatorio incluir su nombre.
 
+<img width="844" height="241" alt="image" src="https://github.com/user-attachments/assets/726fdbaf-f4ba-4f53-89b1-48b8510b32a5" />
+
+<img width="823" height="61" alt="image" src="https://github.com/user-attachments/assets/72e71647-5a5a-4f26-9acb-faeb6a62854b" />
+
+<img width="1088" height="367" alt="image" src="https://github.com/user-attachments/assets/4513e05c-071e-44b1-b1d7-27ae903d7bda" />
+
 <img width="1919" height="940" alt="image" src="https://github.com/user-attachments/assets/c7c197bd-a1dd-49c4-b5a4-4ffe7d3e1162" />
 
 ## Desde el servidor postgresl
@@ -34,3 +40,7 @@ La figura presenta el esquema creado en donde los puertos son:
 # AGREGAR UNA CAPTURA DE PANTALLA DEL RESULTADO
 
 <img width="1800" height="553" alt="image" src="https://github.com/user-attachments/assets/8e74b49a-de45-43eb-a55e-fcc84094e469" />
+
+<img width="1919" height="937" alt="image" src="https://github.com/user-attachments/assets/c2180a8e-9a01-4bf2-bf6a-627ff3529b6e" />
+
+<img width="1911" height="894" alt="image" src="https://github.com/user-attachments/assets/a2bce023-4a79-4be5-83e2-f6b3ef8e373b" />
