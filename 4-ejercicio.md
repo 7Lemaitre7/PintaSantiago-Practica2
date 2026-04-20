@@ -1,4 +1,4 @@
-<img width="1919" height="934" alt="image" src="https://github.com/user-attachments/assets/7ff6bbe1-1568-496d-8d22-3c5399960eab" />## Esquema para el ejercicio
+Esquema para el ejercicio
 ![Imagen](esquema-4-ejercicio.PNG)
 
 ### Crear la red
