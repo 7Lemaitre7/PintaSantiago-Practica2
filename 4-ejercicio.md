@@ -66,11 +66,15 @@ docker rm -f mi-wordpress
 Ingresar a: http://localhost:9300/ 
 recordar que a es el puerto que usó para el mapeo con wordpress
 
+<img width="1909" height="950" alt="Captura de pantalla 2026-04-19 213839" src="https://github.com/user-attachments/assets/901cdb2d-2b2d-437e-8ccb-8fac1cadcfc0" />
+
 <img width="1919" height="934" alt="image" src="https://github.com/user-attachments/assets/d94fbe0a-9aa1-407c-b6f9-db6bbc6f6ec8" />
 
 ### ¿Qué ha sucedido, qué puede observar?
 
-Inicialmente, tras borrar y volver a crear el contenedor, al ingresar a *http://localhost:9300/* aparece una pantalla en blanco, no aparece ningun error. Tras realizar una investigación, se supo que el contenedor de wordpress y de mysql están enlazados con "memoria" del otro (sobre todo, mysql de wordpress) de tal manera que al borrar se pierde completamente la dirección pero al crear nuevamente, sigue sin funcionar pese a que mysql sigue apuntando a wordpress pero al antiguo, no al nuevo. Por ende, para que funcione es necesario instalar todo nuevamente incluido mysql.
+Inicialmente, tras borrar y volver a crear el contenedor, al ingresar a *http://localhost:9300/* aparece una pantalla en blanco, no aparece ningun error. Tras realizar una investigación, se supo que es probable que el contenedor de wordpress y de mysql están enlazados con "memoria" del otro (sobre todo, mysql de wordpress) de tal manera que al borrar se pierde completamente la dirección pero al crear nuevamente, sigue sin funcionar pese a que mysql sigue apuntando a wordpress pero al antiguo, no al nuevo. Por ende, para que funcione es necesario instalar todo nuevamente incluido mysql. Luego se realizó un segundo intento de la actividad y en esta ocasión directamente se reinicia todo desde la configuración de wordpress.
+
+
 
 # COMPLETAR
 
