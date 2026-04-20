@@ -22,13 +22,31 @@ docker network create <nombre red> -d bridge
 docker network create primer-red -d bridge
 ```
 
+```
+docker network create net-curso01 -d bridge
+docker network create net-curso02 -d bridge
+```
+
 ### Crear un contenedor vinculado a una red
 
 <img width="596" height="42" alt="image" src="https://github.com/user-attachments/assets/8b1550c7-832a-4562-8de8-763505d66a9d" />
 
+<img width="589" height="103" alt="image" src="https://github.com/user-attachments/assets/efa61ccd-036d-4191-a25e-36d964eceb77" />
+
+
 ```
 docker run -d --name <nombre contenedor> --network <nombre red> <nombre imagen>
 ```
+
+```
+docker run -d --name contenedor1 --network net-curso01 nginx:alpine
+docker run -d --name contenedor2 --network net-curso01 nginx:alpine
+docker run -d --name contenedor3 --network net-curso01 nginx:alpine
+docker run -d --name contenedor4 --network net-curso01 nginx:alpine
+```
+
+<img width="786" height="173" alt="image" src="https://github.com/user-attachments/assets/aaaefe0e-e87f-4745-9cee-82c6757079df" />
+
 
 ### Para saber a qué red está conectado un contenedor
 
@@ -36,17 +54,45 @@ docker run -d --name <nombre contenedor> --network <nombre red> <nombre imagen>
 docker inspect <nombre contenedor>
 ```
 
+```
+docker inspect contenedor1
+docker inspect contenedor2
+docker inspect contenedor3
+docker inspect contenedor4
+```
+
+<img width="865" height="442" alt="image" src="https://github.com/user-attachments/assets/99f4ff97-6128-4224-92a2-5e171f28a55f" />
+
+<img width="947" height="439" alt="image" src="https://github.com/user-attachments/assets/c495c1e4-970a-4483-a1c0-8c1c20d63654" />
+
+<img width="929" height="444" alt="image" src="https://github.com/user-attachments/assets/640c7e8f-9799-458b-bb8f-c9e5e3266a96" />
+
+<img width="816" height="424" alt="image" src="https://github.com/user-attachments/assets/589febc8-027c-4cc9-9482-a91ba82cf1d9" />
+
 ó
 
 ```
 docker network inspect <nombre red> 
 ```
 
+```
+docker network inspect net-curso01 
+```
+
+<img width="691" height="874" alt="image" src="https://github.com/user-attachments/assets/35c8af8c-2f43-4346-96f0-b82cbcf47055" />
+
 ### Vincular contenedor a una red
 
 ```
 docker network connect <nombre red> <nombre contenedor>
 ```
+```
+docker network connect net-curso02 contenedor1
+```
+
+<img width="679" height="49" alt="image" src="https://github.com/user-attachments/assets/5c4b8770-210b-4f8c-a63e-5466127b6400" />
+
+<img width="782" height="604" alt="image" src="https://github.com/user-attachments/assets/3c8489fd-96cd-4170-824c-bfb48503097f" />
 
 ### Para desvincular un contenedor de una red
 
@@ -54,11 +100,21 @@ docker network connect <nombre red> <nombre contenedor>
 docker network disconnect <nombre red> <nombre contenedor>
 ```
 
+```
+docker network disconnect net-curso01 contenedor1
+```
+
+<img width="485" height="41" alt="image" src="https://github.com/user-attachments/assets/c0412928-1859-41ea-a219-b1b1ba2715f0" />
+
+<img width="700" height="775" alt="image" src="https://github.com/user-attachments/assets/8e0422c5-297b-4980-84d9-4f6e57519ac2" />
+
 ### Para listar las redes existentes
 
 ```
 docker network ls
 ```
+
+<img width="336" height="118" alt="image" src="https://github.com/user-attachments/assets/e7bfde5b-b042-4115-85b4-32e1f3d384f5" />
 
 ### Crear los contenedores y las redes que se presentan en el esquema. Usar para todos los contenedores la imagen de nginx:alpine
 
@@ -67,6 +123,8 @@ docker network ls
 # COLOCAR UNA CAPTURA DE LAS REDES EXISTENTES CREADAS
 
 # COLOCAR UNA(S) CAPTURAS(S) DE LOS CONTENEDORES CREADOS EN DONDE SE EVIDENCIE A QUÉ RED ESTÁN VINCULADOS
+
+<img width="502" height="673" alt="image" src="https://github.com/user-attachments/assets/f9622261-cbf1-4158-83eb-f6d2b9e163bf" />
 
 ### Para eliminar las redes creadas
 
